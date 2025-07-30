@@ -1,6 +1,6 @@
 import { IsEnum, IsUUID } from "class-validator";
-import { OrderStatus } from "generated/prisma";
 import { OrderStatusList } from "../enum/order.enum";
+import { OrderStatus } from "@prisma/client";
 
 export class ChangeOrderStatusDto {
     @IsUUID(4)
